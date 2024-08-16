@@ -17,7 +17,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: 'package-lock.json'
       - run: npm ci
-      - run: npm run build
+      - run: npm run build --output-path dist
   deploy:
     runs-on: ubuntu-22.04
     needs: build
