@@ -17,7 +17,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: 'package-lock.json'
       - run: npm ci
-      - run: npm run build --output-path dist
+      - run: npm run build
   deploy:
     runs-on: ubuntu-22.04
     needs: build
@@ -25,7 +25,7 @@ jobs:
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
         with:
-          publish-dir: './dist/youtube-client'
+          publish-dir: './dist'
           production-branch: master
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: 'Deploy from GitHub Actions'
