@@ -1,0 +1,5 @@
+<div class="videos">
+  @for (video of videos(); track video.id) {
+    <app-video-item [video]="video"></app-video-item>
+  }
+</div>

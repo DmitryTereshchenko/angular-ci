@@ -4,6 +4,7 @@
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "strict": true,
+    "baseUrl": "./",
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
@@ -21,12 +22,15 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@core/*": ["src/app/core/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
   }
 }

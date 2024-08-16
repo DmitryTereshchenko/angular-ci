@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-around;
+  border-bottom: 2px solid #00a0f6;
+}
+
+.toggle {
+  border: none;
+  padding: 10px 20px;
+  background-color: #eee;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ccc;
+  }
+}

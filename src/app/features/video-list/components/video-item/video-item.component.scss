@@ -1,0 +1,23 @@
+:host {
+  padding: 10px;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.video {
+  &__image {
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+
+  &__action {
+    border: none;
+    padding: 10px 30px;
+    margin-top: auto;
+    background-color: #090909;
+    color: #fff;
+  }
+}
+

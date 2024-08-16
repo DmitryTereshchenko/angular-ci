@@ -1,0 +1,5 @@
+@let videoItem = video();
+<img class="video__image" [src]="videoItem?.snippet?.thumbnails?.high?.url" />
+<p class="video__title">{{ videoItem?.snippet?.title }}</p>
+<p class="video__stats"></p>
+<button class="video__action" (click)="onDetailsClick()">More</button>
