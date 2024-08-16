@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Build app
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
         with:
           ref: deploy
       - uses: actions/setup-node@v4
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Deploy to Netlify
-      - uses: nwtgck/actions-netlify@v3.0
+        uses: nwtgck/actions-netlify@v3.0
         with:
           publish-dir: './dist/browser'
           production-branch: master
